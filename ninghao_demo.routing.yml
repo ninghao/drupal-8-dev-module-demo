@@ -5,3 +5,5 @@ ninghao_demo.custom_page:
     _title: '自定义页面'
   requirements:
     _permission: 'access content'
+    _user_is_logged_in: 'true'
+    page_id: '[0-9]+'
