@@ -34,6 +34,6 @@ class NinghaoDemoForm extends FormBase {
   }
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
-
+    drupal_set_message($this->t('您输入的姓名是： @name', ['@name' => $form_state->getValue('name')]));
   }
 }
