@@ -4,6 +4,8 @@ namespace Drupal\ninghao_demo\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
 
 /**
  * Provides a 'Demo' Block
@@ -15,6 +17,10 @@ use Drupal\Core\Form\FormStateInterface;
  * )
  */
 class NinghaoDemoBlock extends BlockBase {
+
+  protected function blockAccess(AccountInterface $account) {
+    return AccessResult::allowedIf($account->isAnonymous());
+  }
 
   public function build() {
     return [
