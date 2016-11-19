@@ -18,7 +18,7 @@ class NinghaoDemoBlock extends BlockBase {
 
   public function build() {
     return [
-      '#markup' => t('hello ~'),
+      '#markup' => t('hello ~ @name', ['@name' => $this->configuration['name']]),
     ];
   }
 
