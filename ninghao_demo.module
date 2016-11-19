@@ -9,3 +9,7 @@ function ninghao_demo_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
     $form['keys']['#placeholder'] = t('搜索');
   }
 }
+
+function ninghao_demo_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+  $build['#attributes']['class'][] = 'item';
+}
