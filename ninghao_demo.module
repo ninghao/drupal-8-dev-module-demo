@@ -1,0 +1,5 @@
+<?php
+
+function ninghao_demo_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $form['keys']['#placeholder'] = t('搜索');
+}
