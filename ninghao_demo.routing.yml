@@ -14,3 +14,11 @@ ninghao_demo.admin:
     _title: '自定义模块配置'
   requirements:
     _permission: 'administer ninghao_demo'
+
+ninghao_demo.form:
+  path: '/ninghao-demo-form'
+  defaults:
+    _title: '表单的演示'
+    _form: '\Drupal\ninghao_demo\Form\NinghaoDemoForm'
+  requirements:
+    _access: 'TRUE'
