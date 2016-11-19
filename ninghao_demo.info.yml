@@ -1,0 +1,5 @@
+name: 演示模块
+description: 宁皓网，Drupal 8 开发课程里的演示模块
+type: module
+package: Custom
+core: 8.x
