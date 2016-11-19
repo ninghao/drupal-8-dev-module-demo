@@ -11,7 +11,17 @@ class NinghaoDemoForm extends FormBase {
   }
 
   public function buildForm(array $form, FormStateInterface $form_state) {
+    $form['name'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('姓名'),
+    ];
 
+    $form['submit'] = [
+      '#type' => 'submit',
+      '#value' => $this->t('保存'),
+    ];
+
+    return $form;
   }
 
   public function validateForm(array &$form, FormStateInterface $form_state) {
