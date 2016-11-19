@@ -1,5 +1,5 @@
 ninghao_demo.custom_page:
-  path: /custom_page
+  path: /custom_page/{page_id}
   defaults:
     _controller: '\Drupal\ninghao_demo\Controller\NinghaoDemoController::page_content'
     _title: '自定义页面'
