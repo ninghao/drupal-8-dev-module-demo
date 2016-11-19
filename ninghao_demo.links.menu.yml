@@ -1,0 +1,5 @@
+ninghao_demo.admin:
+  title: 开发演示
+  description: '宁皓网 Drupal 开发演示模块'
+  parent: system.admin_config_development
+  route_name: ninghao_demo.admin

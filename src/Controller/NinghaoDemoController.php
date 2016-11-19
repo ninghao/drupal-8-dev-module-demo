@@ -9,4 +9,9 @@ class NinghaoDemoController extends ControllerBase {
       '#markup' => t('这是一个来自模块的自定义页面：@page_id', ['@page_id' => $page_id]),
     ];
   }
+  public function admin_page() {
+    return [
+      '#markup' => t('自定义模块的配置界面'),
+    ];
+  }
 }

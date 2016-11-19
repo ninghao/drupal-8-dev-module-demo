@@ -7,3 +7,10 @@ ninghao_demo.custom_page:
     _permission: 'access content'
     _user_is_logged_in: 'true'
     page_id: '[0-9]+'
+ninghao_demo.admin:
+  path: /admin/config/development/ninghao_demo
+  defaults:
+    _controller: '\Drupal\ninghao_demo\Controller\NinghaoDemoController::admin_page'
+    _title: '自定义模块配置'
+  requirements:
+    _permission: 'access content'
