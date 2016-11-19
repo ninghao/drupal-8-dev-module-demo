@@ -1,0 +1,7 @@
+ninghao_demo.custom_page:
+  path: /custom_page
+  defaults:
+    _controller: '\Drupal\ninghao_demo\Controller\NinghaoDemoController::page_content'
+    _title: '自定义页面'
+  requirements:
+    _permission: 'access content'
