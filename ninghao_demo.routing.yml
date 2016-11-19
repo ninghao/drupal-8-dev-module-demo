@@ -13,4 +13,4 @@ ninghao_demo.admin:
     _controller: '\Drupal\ninghao_demo\Controller\NinghaoDemoController::admin_page'
     _title: '自定义模块配置'
   requirements:
-    _permission: 'access content'
+    _permission: 'administer ninghao_demo'
